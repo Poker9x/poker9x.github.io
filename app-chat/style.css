@@ -1,0 +1,83 @@
+body {
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  background : #dddddd;
+  font-size : 20px;
+}
+
+.form {
+  background : white;
+  margin: 20px;
+  padding: 20px;
+  border-radius : 10px;
+}
+.form .title {
+  margin : -21px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+  background: #eeeeee;
+  border : 1px solid #dddddd;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.form input[type=text] {
+  width : 100%;
+  padding: 10px;
+  box-sizing : border-box;
+  outline: none;
+}
+.form input[type=submit] {
+  border : 1px solid #dddddd;
+  background: #eeeeee;
+  padding: 10px;
+  margin-top : 5px;
+  font-weight: bold;
+}
+.list {
+  background: white;
+  margin : 10px 20px 10px 20px;
+  padding: 10px;
+  display: flex;
+  border-radius : 10px;
+}
+#s {
+  animation: show 5s;
+}
+.list div {
+  margin: 10px 5px 10px 5px;
+  
+}
+.list .name {
+  font-weight: bold;
+  font-size: 21px;
+}
+.list .time {
+  font-size: 17px;
+  color : #34343C;
+  margin-top : 14px;
+}
+
+@keyframes show{
+  0% {
+    opacity : 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.pg {
+    margin : 10px 20px 10px 20px;
+    display: flex;
+    border-radius : 10px;
+}
+.pg div:first-child {
+  background: white;
+  width : 80%;
+  padding: 10px
+}
+.pg div:last-child {
+  background: white;
+  width: 20%;
+  padding : 10px;
+}

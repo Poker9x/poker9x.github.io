@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+    <script src="js/fb-init.js"></script>
+    
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div v-if="data == null">
+      Loading...
+    </div>
+    <div v-else>
+    <div class="form">
+      <div class="title">App Chat By Poker</div>
+      <input type="text" placeholder="Nhập Tên" v-model="name">
+      <input type="text" placeholder="Nhập Nội Dung" v-model="nd">
+      <input type="submit" @click="chat" value="OK">
+    </div>
+    <div class="list"v-for="i,v in data">
+        <div class="name">{{i.name}}</div>
+        <div class="time">{{i.time}} : </div>
+        <div class="nd">{{i.nd}}</div>
+    </div>
+    
+    <div class="pg">
+      <div @click="pre">Pre</div>
+      <div @click="next">Next</div>
+    </div>
+    
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

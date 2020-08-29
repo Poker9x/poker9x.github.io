@@ -3,7 +3,7 @@ var app = new Vue({
   data : {
     data : null,
     pdata : null,
-    p : "/",
+    p : "https://poker9x.github.io/box-music/",
     au : new Audio(),
     load : true,
     index : "home",

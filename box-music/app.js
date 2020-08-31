@@ -42,7 +42,7 @@ var app = new Vue({
         window.history.pushState(state, "play box","play");
        
       app.$http.get("https://pokerboy.000webhostapp.com/api/mp3/api.php?u=play&id="+id).then(e => {
-       window.onload = function(){
+       
         app.load = false
         var js = e.body;
         app.pdata = js;
@@ -50,7 +50,7 @@ var app = new Vue({
         if(n != 0){
           this.au.play();
         }
-         }
+         
       });
     },
     open(e){

@@ -1,0 +1,10 @@
+@media only screen and (min-width: 900px){
+  .home {
+    border: 2px solid #A77000;
+    padding: 10px
+  }
+  .bg .popup {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
